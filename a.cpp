@@ -115,7 +115,7 @@ int main(){
         cout<<i.first<<" ->"<<i.second<<"   ";
     }
     cout<<endl;
-    if(path[path.size()].second!=end){
+    if(path[path.size()].second==end){
         cout<<"there does not exist a path from start to end "<<endl;
     }
     else{
