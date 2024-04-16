@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
+#include <chrono>
 using namespace std;
-
+using namespace std::chrono;
 vector<int> calHeuristic(vector<pair<int, int>> coordinates, int end)
 {
     vector<int> ans(coordinates.size());
@@ -106,7 +107,15 @@ int main(){
         }
     }
     
+    
+    // Get starting timepoint
+    auto sta = high_resolution_clock::now();
+    
     vector<pair<int,int>> path=astar(h,graph,start,end);
+
+
+    // Get ending timepoint
+    auto stop = high_resolution_clock::now();
 
     cout<<" the starting node is   "<<start<<" the end node is  "<<end<<endl;
 
@@ -121,6 +130,13 @@ int main(){
     else{
         cout<<"so the above is path "<<endl;
     }
+    
+    
+    
+    auto duration = duration_cast<microseconds>(stop - sta);
+ 
+    cout << "Time taken by function: "
+         << duration.count() << " microseconds" << endl;
 
     return 0;
 }
