@@ -23,3 +23,7 @@ The files include in this repository:
   7. `main2.cpp` : Using this file we are comparing the runtime of each implementation by varying the weight associated to the heuristic value.
   8. `main3.cpp` : Using this file we are comparing the runtime of each implementation by varying the density of graph(in terms of number of edges).
   9. `Report.pdf`: This contains the study of the findings of our project.
+
+The contributors of this project are:
+  1. Pranav Anand Prakash Sharma
+  2. Yuvraj
