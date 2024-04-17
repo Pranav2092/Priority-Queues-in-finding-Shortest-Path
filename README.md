@@ -21,7 +21,7 @@ The files include in this repository:
   5. `graph_generator.cpp` : This provides the dataset by generating random weighted graph in the form of adjacency matrix.It also generates the coordinates of the nodes, which we use to calculated the heuristic value.This code is integrated in each of our above implemetations.
   6. `main.cpp` : Using this file we are comparing the runtime of each implementation by varying the number of nodes.
   7. `main2.cpp` : Using this file we are comparing the runtime of each implementation by varying the weight associated to the heuristic value.
-  8. `main3.cpp` : Using this file we are comparing the runtime of each implementation by varying the density of graph(in terms of number of edges).
+  8. `main3.cpp` : Using this file we are comparing the runtime of each implementation by reducing  the density of graph(in terms of number of edges ) and checking the effect of algorithims for sparse graphs.
   9. `Report.pdf`: This contains the study of the findings of our project.
   10. 'outputs.docx' : This contains the output generated all input edges values given in different-different code scenerio like case of spare matrix , case of dense graph , case of variable heuristic weight
 The contributors of this project are:
